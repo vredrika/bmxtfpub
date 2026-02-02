@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Фото</title>
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  background: black;
+  height: 100%;
+}
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  height: 100vh;
+}
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+img {
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+}
+</style>
+</head>
+<body>
+<div class="slider">
+  <div class="slide"><img src="IMG_6246.jpg"></div>
+  <div class="slide"><img src="IMG_5268.jpg"></div>
+  <div class="slide"><img src="IMG_4712.jpg"></div>
+  <div class="slide"><img src="IMG_6620.jpg"></div>
+</div>
+</body>
+</html>
